@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout"
+    android:layout_marginHorizontal="25dp">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
+        android:layout_above="@+id/linearBtn"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerInParent="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            app:cornerRadius="10dp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Date"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            app:cornerRadius="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/linearBtn"/>
+
+
+</RelativeLayout>
